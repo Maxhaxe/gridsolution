@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 220" width="1300" height="220" role="img" aria-label="Grid Solutions">
+  <title>Grid Solutions</title>
+  <!-- Cirkel 1: hoogspanningsmast -->
+  <circle cx="110" cy="110" r="105" fill="#5f8a99"/>
+  <g fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M85 195 L100 30 L120 30 L135 195"/>
+    <path d="M100 30 L120 30 M92 90 L128 90 M88 130 L132 130 M86 165 L134 165"/>
+    <path d="M60 60 L160 60 M50 90 L170 90"/>
+    <path d="M100 30 L128 90 M120 30 L92 90 M92 90 L132 130 M128 90 L88 130 M88 130 L134 165 M132 130 L86 165"/>
+    <path d="M10 70 Q60 95 60 60 M50 90 Q20 120 5 100 M160 60 Q160 95 210 70 M170 90 Q200 120 215 100"/>
+  </g>
+  <!-- Cirkel 2: transformator -->
+  <circle cx="300" cy="110" r="105" fill="#a9cad4"/>
+  <g fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="235" y="95" width="130" height="90" rx="4"/>
+    <path d="M230 95 L370 95"/>
+    <g stroke-width="3">
+      <path d="M262 95 V45 M262 50 h10 M252 58 h20 M252 66 h20 M252 74 h20 M252 82 h20"/>
+      <path d="M300 95 V45 M300 50 h10 M290 58 h20 M290 66 h20 M290 74 h20 M290 82 h20"/>
+      <path d="M338 95 V45 M338 50 h10 M328 58 h20 M328 66 h20 M328 74 h20 M328 82 h20"/>
+    </g>
+  </g>
+  <path d="M305 115 L288 145 L300 145 L292 170 L312 135 L300 135 L308 115 Z" fill="#ffffff"/>
+  <!-- Woordmerk -->
+  <g font-family="'Rajdhani','Saira','Bahnschrift SemiCondensed','Bahnschrift','Arial Narrow',Arial,sans-serif" font-weight="600" letter-spacing="3">
+    <text x="440" y="104" font-size="104" fill="#587f8e">Grid</text>
+    <text x="440" y="204" font-size="104" fill="#7ba7b6">Solutions</text>
+  </g>
+</svg>

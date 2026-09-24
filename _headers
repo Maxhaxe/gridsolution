@@ -1,0 +1,23 @@
+# Koppen voor statische hosts (Netlify, Cloudflare Pages, Vercel).
+# Dit geldt nu voor de TESTOMGEVING: niet indexeren, niet cachen.
+# Ga je live? Verwijder dan de regels onder "testomgeving" en houd alleen de
+# beveiligingskoppen over.
+
+/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Cache-Control: no-store
+
+/*.html
+  Content-Type: text/html; charset=utf-8
+
+/*.css
+  Content-Type: text/css; charset=utf-8
+
+/*.js
+  Content-Type: text/javascript; charset=utf-8
+
+/*.svg
+  Content-Type: image/svg+xml

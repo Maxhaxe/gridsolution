@@ -1,0 +1,7 @@
+﻿# Local files & scripts
+*.bat
+gridsolutions-website.zip
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini

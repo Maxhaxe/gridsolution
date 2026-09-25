@@ -1,0 +1,421 @@
+﻿<?php
+/**
+ * Template Name: Homepage (Grid Solutions)
+ * Description: Template voor Homepage (Grid Solutions) binnen het Grid Solutions thema.
+ */
+
+get_header();
+?>
+
+<!-- Tekst die via de WordPress pagina-editor is ingevoerd wordt hier getoond -->
+<?php
+if (have_posts()) :
+    while (have_posts()) :
+        the_post();
+        if (trim(get_the_content())) :
+?>
+            <section class="section pb-0">
+                <div class="container">
+                    <div class="intro mb-md">
+                        <?php the_content(); ?>
+                    </div>
+                </div>
+            </section>
+<?php
+        endif;
+    endwhile;
+endif;
+?>
+
+<main id="main">
+    <section class="hero">
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <div class="reveal">
+          <p class="hero__badge"><i aria-hidden="true"></i> Engineeringspartner van de netbeheerbedrijven</p>
+          <h1>Engineering en tekenwerk voor <span>het elektriciteitsnet</span></h1>
+          <p class="hero__lead">
+            Grid Solutions voert engineeringopdrachten uit voor de grote netbeheerbedrijven in Nederland.
+            Met diepgaande sectorkennis, jarenlange ervaring in <strong>ELCAD</strong> en <strong>EPLAN</strong>
+            en een sterke focus op secundaire engineering leveren wij complete werkpakketten &ndash; van eerste
+            ontwerp tot en met de as-built documentatie.
+          </p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="<?php echo esc_url(gridsolutions_get_page_url('contact')); ?>">Contact opnemen</a>
+            <a class="btn btn--outline-light" href="<?php echo esc_url(gridsolutions_get_page_url('diensten')); ?>">Bekijk onze diensten</a>
+          </div>
+          <p class="hero__note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            Flexibele capaciteit: projectmatig, op detacheringsbasis of remote.
+          </p>
+        </div>
+        <div class="hero__facts reveal">
+          <div class="fact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg>
+            <div>
+              <strong>ELCAD &amp; EPLAN specialisten</strong>
+              <span>Kastschema&rsquo;s, klemmenstroken, kabelbladen en rapportages volgens de normen van de opdrachtgever.</span>
+            </div>
+          </div>
+          <div class="fact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>
+            <div>
+              <strong>Secundaire engineering HS/MS</strong>
+              <span>Meet-, beveiligings- en besturingssystemen voor hoogspannings- en middenspanningsstations.</span>
+            </div>
+          </div>
+          <div class="fact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M4 10h16M9 10v9"/></svg>
+            <div>
+              <strong>Complete werkpakketten</strong>
+              <span>Van inventarisatie en ontwerp tot opleverdossier &ndash; Ã©Ã©n aanspreekpunt voor het hele traject.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="usp-strip" aria-label="Waarom Grid Solutions">
+      <div class="usp-strip__inner">
+        <span class="usp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Engineering voor netbeheerders</span>
+        <span class="usp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Ervaren in ELCAD en EPLAN</span>
+        <span class="usp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Kwaliteit en veiligheid voorop</span>
+        <span class="usp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Van concept tot oplevering</span>
+      </div>
+    </section>
+    <section class="section" id="diensten">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Onze diensten</span>
+          <h2>Engineering en tekenwerk waar netbeheerders op bouwen</h2>
+          <p class="lead">
+            Wij ondersteunen opdrachtgevers bij uiteenlopende engineeringsvraagstukken en het opstellen
+            van complete werkpakketten. Van concept tot uitvoering, altijd binnen de normen en
+            werkwijzen die binnen de sector gelden.
+          </p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h16"/><circle cx="19" cy="12" r="2"/></svg></div>
+            <h3>Secundaire engineering</h3>
+            <p>Ontwerp en uitwerking van meet-, beveiligings- en besturingssystemen voor HS- en MS-stations: enkellijnschema&rsquo;s, beveiligingsfilosofie, signaaloverzichten en instelwaarden.</p>
+            <a class="card__link" href="<?php echo esc_url(gridsolutions_get_page_url('diensten') . '#secundaire-engineering'); ?>">Meer over secundaire engineering</a>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg></div>
+            <h3>ELCAD-tekenwerk</h3>
+            <p>Schematekeningen, klemmenstroken, kabelbladen en revisietekeningen in ELCAD. Wij werken volgens de tekenstandaard, symboolbibliotheken en lay-out van de opdrachtgever.</p>
+            <a class="card__link" href="<?php echo esc_url(gridsolutions_get_page_url('diensten') . '#elcad'); ?>">Meer over ELCAD</a>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 5h14v14H5z"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg></div>
+            <h3>EPLAN engineering</h3>
+            <p>Projecten in EPLAN Electric P8: kastindeling, macro&rsquo;s, artikeldata, klemmen- en kabelconfiguratie en het genereren van rapportages en productiebestanden.</p>
+            <a class="card__link" href="<?php echo esc_url(gridsolutions_get_page_url('diensten') . '#eplan'); ?>">Meer over EPLAN</a>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="M8 10h8M8 14h5"/></svg></div>
+            <h3>Complete werkpakketten</h3>
+            <p>Werkpakketten voor nieuwbouw, vervanging en uitbreiding: van tekeningen en materiaallijsten tot montage-instructies en een compleet opleverdossier.</p>
+            <a class="card__link" href="<?php echo esc_url(gridsolutions_get_page_url('diensten') . '#werkpakketten'); ?>">Meer over werkpakketten</a>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 6 9 17l-5-5"/><path d="M3 12a9 9 0 1 1 3 6.7"/></svg></div>
+            <h3>Revisie &amp; actualisatie</h3>
+            <p>Inventarisatie van bestaande installaties, het controleren van tekeningen op de werkelijke situatie en het opleveren van eenduidige as-built sets.</p>
+            <a class="card__link" href="<?php echo esc_url(gridsolutions_get_page_url('diensten') . '#revisie'); ?>">Meer over revisie</a>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M17 9v6M14 12h6"/></svg></div>
+            <h3>Detachering &amp; flexibele capaciteit</h3>
+            <p>Onze engineers en tekenaars zijn inzetbaar op locatie of remote: voor piekbelasting, vervanging of langdurige projecten met een vaste bezetting.</p>
+            <a class="card__link" href="<?php echo esc_url(gridsolutions_get_page_url('diensten') . '#detachering'); ?>">Meer over detachering</a>
+          </article>
+        </div>
+        <div class="btn-row btn-row--center mt-3">
+          <a class="btn btn--primary" href="<?php echo esc_url(gridsolutions_get_page_url('diensten')); ?>">Alle diensten bekijken</a>
+          <a class="btn btn--ghost" href="<?php echo esc_url(gridsolutions_get_page_url('vacatures')); ?>">Werken bij Grid Solutions</a>
+        </div>
+      </div>
+    </section>
+    <section class="section section--dark" id="tools">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Onze gereedschappen</span>
+          <h2>Diepgaande ervaring met ELCAD &eacute;n EPLAN</h2>
+          <p class="lead">
+            Binnen de netbeheersector wordt met verschillende tekenpakketten gewerkt. Wij zijn thuis in
+            beide wereld: <strong>ELCAD</strong> voor schematekeningen en revisiewerk, <strong>EPLAN</strong>
+            voor projectmatige kastontwerpen en gestructureerde data. Daardoor sluiten wij direct aan op
+            de werkwijze, bibliotheken en uitwisselformaten van uw organisatie.
+          </p>
+        </div>
+        <div class="tool-banner">
+          <article class="card card--dark reveal">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h8M8 17h4"/></svg></div>
+            <h3>ELCAD <span class="tool__tag">Schematechniek</span></h3>
+            <p>
+              Tekeningen opbouwen en beheren in ELCAD: enkel- en meervoudige schema&rsquo;s, klemmenstroken,
+              kabelbladen, signaaloverzichten en revisietekeningen. Wij werken met de symboolbibliotheken,
+              tekeningkoppen en revisiebeheer die bij de netbeheerder in gebruik zijn &ndash; inclusief het
+              opschonen en actualiseren van historische tekeningbestanden.
+            </p>
+            <ul class="checklist mt-1">
+              <li>Aansluiten op bestaande projectstructuur en revisiestandaard</li>
+              <li>Klemmen-, kabel- en aderadministratie volledig consistent</li>
+              <li>Geschikt voor revisie, uitbreiding en as-built situaties</li>
+            </ul>
+          </article>
+          <article class="card card--dark reveal">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M4 10h16M10 10v9"/></svg></div>
+            <h3>EPLAN <span class="tool__tag">Engineering</span></h3>
+            <p>
+              Projectmatig werken in EPLAN Electric P8: kastindeling, macro&rsquo;s en klantspecifieke
+              bibliotheken, artikeldata, klemmen- en kabelconfiguratie en het genereren van rapportages,
+              productiebestanden en opleverdossiers. Ideaal voor herhaalbare, gestandaardiseerde
+              oplossingen en voor het werken met uniforme apparatuurreeksen.
+            </p>
+            <ul class="checklist mt-1">
+              <li>Macro- en sjabloonbeheer voor herhaalbaar ontwerp</li>
+              <li>Automatische rapportages: klemmen, kabels, apparatuur</li>
+              <li>Consistente data-uitwisseling met panelenbouwers en leveranciers</li>
+            </ul>
+          </article>
+        </div>
+        <ul class="tag-list reveal mt-3">
+          <li>IEC 60617</li>
+          <li>IEC 61850</li>
+          <li>NEN-EN 61439</li>
+          <li>NEN 3140</li>
+          <li>VCA</li>
+          <li>Beveiligingsfilosofie netbeheerders</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Waarom Grid Solutions</span>
+          <h2>Engineering die direct inzetbaar is</h2>
+        </div>
+        <div class="stats reveal">
+          <div class="stat">
+            <strong>Netbeheerders</strong>
+            <span>Wij voeren opdrachten uit voor de grote netbeheerbedrijven in Nederland</span>
+          </div>
+          <div class="stat">
+            <strong>HS &amp; MS</strong>
+            <span>Ervaring met secundaire engineering op hoog- en middenspanningsstations</span>
+          </div>
+          <div class="stat">
+            <strong>ELCAD / EPLAN</strong>
+            <span>Volledig ingewerkt in beide teken- en engineeringpakketten</span>
+          </div>
+          <div class="stat">
+            <strong>24 uur</strong>
+            <span>Reactietijd op vragen en aanvragen, op werkdagen</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="werkwijze">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Onze werkwijze</span>
+          <h2>Van engineeringvraag tot opgeleverd werkpakket</h2>
+          <p class="lead">
+            Een vaste, transparante aanpak met duidelijke tussenmomenten. Zo weet u precies waar het
+            project staat en blijft de kwaliteit beheersbaar.
+          </p>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <div>
+              <h3>Inventarisatie &amp; afstemming</h3>
+              <p>We inventariseren de vraag, de bestaande situatie en de geldende standaarden van de opdrachtgever. Samen bepalen we scope, planning en oplevervorm.</p>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div>
+              <h3>Ontwerp &amp; uitgangspunten</h3>
+              <p>Beveiligingsfilosofie, systeemkeuzes en uitgangspunten worden vastgelegd in een ontwerp dat als basis dient voor de verdere uitwerking.</p>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div>
+              <h3>Uitwerken in ELCAD of EPLAN</h3>
+              <p>Schema&rsquo;s, klemmenstroken, kabelbladen en kastindelingen worden uitgewerkt in ELCAD of EPLAN, binnen de projectstructuur en bibliotheken van de opdrachtgever.</p>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div>
+              <h3>Review &amp; interne toetsing</h3>
+              <p>Elk pakket gaat door een interne review op volledigheid, consistentie en normconformiteit voordat het de deur uit gaat.</p>
+            </div>
+          </div>
+          <div class="step reveal">
+            <div>
+              <h3>Oplevering &amp; nazorg</h3>
+              <p>Oplevering van het complete werkpakket inclusief materiaallijsten en opleverdossier, met ondersteuning bij realisatie en eventuele revisies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="over-ons-kort">
+      <div class="container">
+        <div class="split">
+          <div class="reveal">
+            <span class="eyebrow">Over Grid Solutions</span>
+            <h2>Een engineeringspartij met de voeten in de sector</h2>
+            <p class="lead">
+              Grid Solutions is opgericht vanuit een brede ervaring in de elektrotechnische sector. Wij
+              kennen de dynamiek van netbeheerprojecten: strakke planningen, hoge eisen aan veiligheid en
+              documentatie die jaren later nog moet kloppen.
+            </p>
+            <blockquote class="quote">&ldquo;Als je denkt aan engineering voor het net, denk je aan Grid Solutions.&rdquo;</blockquote>
+            <p>
+              Wij werken voor grote netbeheerbedrijven en de partijen daaromheen: van secundaire
+              engineering op hoogspanningsstations tot het volledig uitwerken van werkpakketten in
+              ELCAD en EPLAN. Onze engineers denken mee over de oplossing, niet alleen over de tekening.
+            </p>
+            <div class="btn-row mt-2">
+              <a class="btn btn--primary" href="<?php echo esc_url(gridsolutions_get_page_url('over-ons')); ?>">Meer over ons</a>
+              <a class="btn btn--ghost" href="<?php echo esc_url(gridsolutions_get_page_url('contact')); ?>">Kennismaken</a>
+            </div>
+          </div>
+          <div class="figure reveal" aria-hidden="true">
+            <svg viewBox="0 0 620 420" role="presentation">
+              <defs>
+                <linearGradient id="gsbg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#22343c"/>
+                  <stop offset="1" stop-color="#3f6572"/>
+                </linearGradient>
+              </defs>
+              <rect width="620" height="420" fill="url(#gsbg)"/>
+              <g stroke="#a9cad4" stroke-width="2" fill="none" opacity=".9">
+                <path d="M60 340h500"/>
+                <path d="M110 340V150M310 340V150M510 340V150"/>
+                <path d="M110 150h400"/>
+                <path d="M110 120h400M110 190h400"/>
+              </g>
+              <g stroke="#a9cad4" stroke-width="2.4" fill="none">
+                <path d="M110 120 310 45 510 120"/>
+                <path d="M110 190 310 265 510 190"/>
+                <path d="M310 45v-25M310 265v75"/>
+              </g>
+              <g fill="#a9cad4">
+                <rect x="86" y="112" width="18" height="18" rx="2"/>
+                <rect x="516" y="112" width="18" height="18" rx="2"/>
+                <rect x="86" y="182" width="18" height="18" rx="2"/>
+                <rect x="516" y="182" width="18" height="18" rx="2"/>
+              </g>
+              <g stroke="#ffffff" stroke-width="2" fill="none">
+                <rect x="410" y="240" width="140" height="100" rx="6"/>
+                <path d="M410 270h140"/>
+                <path d="M435 300h22M475 300h22M515 300h22"/>
+                <path d="M446 270v30M486 270v30M526 270v30"/>
+              </g>
+              <g stroke="#ffffff" stroke-width="2" fill="none" opacity=".75">
+                <path d="M60 240h300M60 300h300M60 360h300"/>
+                <circle cx="60" cy="240" r="4" fill="#ffffff"/>
+                <circle cx="60" cy="300" r="4" fill="#ffffff"/>
+                <circle cx="60" cy="360" r="4" fill="#ffffff"/>
+              </g>
+              <text x="60" y="382" fill="#a9cad4" font-family="Bahnschrift, Arial, sans-serif" font-size="20" letter-spacing="3">SCHEMA Â· ELCAD / EPLAN</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="voor-wie">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Voor wie wij werken</span>
+          <h2>Opdrachtgevers in en rond de netbeheersector</h2>
+          <p class="lead">
+            Onze engineeringscapaciteit wordt ingezet bij organisaties die werken aan het Nederlandse
+            elektriciteitsnet &ndash; van netbeheerder tot toeleverancier.
+          </p>
+        </div>
+        <div class="grid grid--4">
+          <article class="card reveal card--flat">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/></svg></div>
+            <h3>Netbeheerbedrijven</h3>
+            <p>Engineeringcapaciteit voor stationsprojecten, vervangingen en uitbreidingen van het net.</p>
+          </article>
+          <article class="card reveal card--flat">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 20h18"/><path d="M6 20V8h12v12"/><path d="M9 12h6M9 16h6"/></svg></div>
+            <h3>Stationsaannemers</h3>
+            <p>Werkpakketten en tekenwerk als ondersteuning bij de realisatie van stations en installaties.</p>
+          </article>
+          <article class="card reveal card--flat">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="M8 10h8M8 14h4"/></svg></div>
+            <h3>Panelenbouwers</h3>
+            <p>Productieklare schema&rsquo;s, kastindelingen en stuklijsten, opgebouwd in EPLAN of ELCAD.</p>
+          </article>
+          <article class="card reveal card--flat">
+            <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3l9 5v8l-9 5-9-5V8z"/><path d="M12 12l9-4M12 12v9M12 12L3 8"/></svg></div>
+            <h3>Industri&euml;le opdrachtgevers</h3>
+            <p>Ontwerp en revisie van elektrotechnische installaties en besturingssystemen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--pale" id="vacatures-kort">
+      <div class="container">
+        <div class="split split--top">
+          <div class="reveal">
+            <span class="eyebrow">Werken bij Grid Solutions</span>
+            <h2>Bouw mee aan het elektriciteitsnet van morgen</h2>
+            <p class="lead">
+              De energietransitie vraagt om meer engineering dan ooit. Daarom zoeken wij engineers en
+              tekenaars die net als wij kwaliteit, veiligheid en duidelijkheid belangrijk vinden &ndash;
+              en die willen groeien in ELCAD en EPLAN.
+            </p>
+            <div class="btn-row mt-2">
+              <a class="btn btn--primary" href="<?php echo esc_url(gridsolutions_get_page_url('vacatures')); ?>">Bekijk onze vacatures</a>
+              <a class="btn btn--ghost" href="mailto:info@gridsolutions.nl?subject=Open%20sollicitatie">Open sollicitatie</a>
+            </div>
+          </div>
+          <div class="grid grid--2 reveal">
+            <article class="card">
+              <h3>Lead Engineer</h3>
+              <p>Technisch verantwoordelijk voor station- en systeemontwerpen, het aansturen van engineers en het bewaken van kwaliteit richting de opdrachtgever.</p>
+              <a class="card__link" href="vacatures.html#lead-engineer">Vacature bekijken</a>
+            </article>
+            <article class="card">
+              <h3>Detailengineer / Tekenaar</h3>
+              <p>Uitwerken van schema&rsquo;s, klemmenstroken en kabelbladen in ELCAD en EPLAN, binnen de standaarden en bibliotheken van de netbeheerder.</p>
+              <a class="card__link" href="vacatures.html#detailengineer">Vacature bekijken</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <h2>Een engineeringvraag of extra capaciteit nodig?</h2>
+            <p>
+              Vertel ons waar u aan werkt. Wij denken graag mee over de aanpak, de planning en de
+              beste invulling van de engineering &ndash; van een losse tekening tot een volledig werkpakket.
+            </p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn--light" href="<?php echo esc_url(gridsolutions_get_page_url('contact')); ?>">Neem contact op</a>
+            <a class="btn btn--outline-light" href="mailto:info@gridsolutions.nl">Mail ons direct</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<?php
+get_footer();
+
